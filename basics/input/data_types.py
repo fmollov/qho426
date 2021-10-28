@@ -1,0 +1,7 @@
+print("What is your name human?")
+n = input()
+print("How old are you?")
+a = int(input())
+print("How tall are you?(in meters)")
+h = input()
+print(How)
