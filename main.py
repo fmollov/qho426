@@ -1,37 +1,31 @@
-#Initialise empty dictionary
-phonebook = {}
-d2 = dict()
-print(type(phonebook))
+def observed():
+  observations = []
+  for i in range(5):
+    inp = input("Enter new value: ")
+    observations.append(inp)
+  return observations
 
-#Initialise non-empty dictionary
-Fikret_data = {"Name": "Fikret", "Age" : 55, "Dogo": False, "Title" : "Mr"}
+def remove_observation(x = []):
+  while True :
+    print("Please enter an observation to be removed: ")
+    obs = input()
+    if obs in x:
+      x.remove(obs)
+    print("Would you like to remove an observation? ")
+    response = input()
+    if response != "yes":
+        break
+  return x
 
-#Print full dictionary
-print(Fikret_data)
-
-#Use part of the dictionary for printing purposes
-x = Fikret_data["Name"]
-y = Fikret_data["Age"]
-print(f"{x} is {y} years old")
-
-#Adding elements to a dictionary
-phonebook["Max"] = "077895865845"
-phonebook["Ugabuga"] = "07758124512"
-phonebook["Lucy"] = None
-
-print(phonebook)
-
-#Add more people to the phonebook
-for i in range(3):
-  n = input("Enter the name: ")
-  numb = input(f"Enter {n}'s number: ")
-  phonebook[n] = numb
-
-name = input("Who you like to call?")
-
-if 
-if name in phonebook:
-
-  print(f"Calling {name} with phone number {phonebook[name]}")
-else:
-  print(f"{name} is not in your phonebook")
+def run():
+  lista = observed()
+  remove_observation(lista)
+  obs_set = set()
+  for i in lista:
+    tuplex = (i, lista.count(i))
+    obs_set.add(tuplex)
+  print("Obsevations: ")
+  for thing in obs_set:
+    print(f"{thing[0]} has been observed {thing[1]} times")
+  
+run()
