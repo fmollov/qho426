@@ -5,25 +5,23 @@ s = set()
 print(type(s))
 
 #Initialise non-empty set
-colours = {"blue", "yellow", "red", "purple", "green"}
+colours = {"blue","yellow", "red", "purple", "green"}
+
 print(colours)
 
 #Adding elements to a set
 colours.add("black")
 colours.add("turquoise")
-
 print(colours)
 
 #Delete an element of a set
 colours.remove("blue")
 
-
 #Check membership
 if "blue" not in colours:
-    print("My favourite colour is here!")
+    print("Yay - my favourite colour is here!")
 else:
-    print("You are missing an important colour!")
-
+    print("You are missing an important colour")
 
 colors = {"yellow", "black", "red", "cyan"}
 
@@ -33,5 +31,5 @@ print(colours.union(colors))
 #Take intersection of two sets - the "common" elements
 print(colours.intersection(colors))
 
-#take set difference - so only keep elements NOT in another collection
+#Take set difference - so only keep elements NOT in another collection
 print(colours.difference(colors))

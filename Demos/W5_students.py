@@ -5,11 +5,11 @@ print out student's name and their mark
 calculate average mark of all students'''
 
 def generate_sts():
-    print("Enter the name: ")
-    name = input()
-    print("Enter the mark: ")
-    grade = float(input())
-    return (name, grade)
+   print("Enter the name: ")
+   name = input()
+   print("Enter the mark: ")
+   grade = float(input())
+   return (name, grade)
 
 def add_multiple_sts():
     all_sts = []
@@ -28,10 +28,12 @@ def print_sts(lista):
 def avg_mark(lista):
     total = 0
     for person in lista:
-          total += person[1]
+          total += person[1]  
     return total/len(lista)
 
-def run()
+def run():
+    listb = add_multiple_sts()
+    print_sts(listb)
+    print(f"The average mark is {avg_mark(listb)}")
 
-
-
+run()

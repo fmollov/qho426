@@ -22,4 +22,3 @@ def simple_tuples():
     print(max(t))
     print(min(t))
     print(min(p1))
-

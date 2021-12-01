@@ -1,6 +1,6 @@
 answer = ""
-while answer != "stop":
-  print("Dormamu I came to bargain!")
-  answer = input()
+while answer != input():
+    print("Dormamu I came to bargain!")
+
 
 print("Out of the loop, finally!")

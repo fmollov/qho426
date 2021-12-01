@@ -30,7 +30,7 @@ Very very good and very very cheap
 One pound fish
 
 Come on ladies, come on ladies, 1 pound fish
-Come on ladies, come on ladies, 1 pound fish 
+Come on ladies, come on ladies, 1 pound fish
 '''
 
 l = song.lower().replace(",", "").split()
@@ -43,6 +43,9 @@ print(len(song_set))
 print("-"*20)
 dicto = {}
 for i in l:
-  dicto[i] = dicto.get(i,0) + 1
+    dicto[i] = dicto.get(i,0) + 1
+
 print(dicto)
 print(len(dicto))
+#dicto["come"]
+#come:2, on:2, ladies:1, 
