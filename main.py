@@ -1,9 +1,2 @@
-import matplotlib.pyplot as plt
-import random as rnd
-
-def data():
-  paths = {}
-
-print("What type of line (:, -- or -)?")
-
-run()
+print("Nice to meet you {name}.".format(name = "Fikret"))
+print("My name is Beep. I have {number} friends,  who are waiting {count}£ from you ...".format(number = 3, count = 50))
